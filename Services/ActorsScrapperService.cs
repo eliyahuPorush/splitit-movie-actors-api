@@ -15,7 +15,10 @@ public class ActorsScrapperService(IOptions<ActorsSourceConfig> actorsSourceConf
 
         var nodes = doc.DocumentNode.SelectNodes(actorsSourceConfig.Value.ActorHtmlContainerId);
 
-        if (nodes is null) return;
+        if (nodes is null)
+        {
+            throw new Exception("Couldn't Scrap actors, Invalid Configuration");
+        };
         var actors = (from htmlNode in nodes
             let name = htmlNode.SelectSingleNode(actorsSourceConfig.Value.NameHtmlElementId).InnerText.Trim()
             let rank = htmlNode.SelectSingleNode(actorsSourceConfig.Value.RankHtmlElementId)
