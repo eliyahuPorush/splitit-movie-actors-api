@@ -1,5 +1,5 @@
 
-```markdown
+
 # IMDb Top Actors Scraper API
 
 This project is a RESTful API developed in C# .NET Core for managing an actor database, sourced from IMDb. The API provides endpoints for retrieving, adding, updating, and deleting actor information, with data preloaded from a web-scraping operation. The scraping is done using the HTMLAgilityPack library.
@@ -197,4 +197,4 @@ For any questions or issues, please contact [porusheli@gmail.com](mailto:porushe
 ## Repository
 
 The project's GitHub repository is available [here](https://github.com/eliyahuPorush/splitit-movie-actors-api).
-```
+
