@@ -146,8 +146,7 @@ DELETE /api/actors/{id}
 1. **Clone the Repository:**
 
    ```bash
-   git clone <your-repository-url>
-   cd <repository-directory>
+   git clone https://github.com/eliyahuPorush/splitit-movie-actors-api.git
    ```
 
 2. **Install Dependencies:**
